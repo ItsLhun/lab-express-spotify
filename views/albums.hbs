@@ -1,0 +1,9 @@
+<main class="artists-main">
+    <h2>Albums For: {{albums.0.artists.0.name}}</h4>
+
+    <div class="artists-main">
+    {{#each albums}}
+        {{> displaycard this}}
+    {{/each}}
+</div>
+</main>

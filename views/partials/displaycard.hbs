@@ -1,0 +1,11 @@
+<div class='artist-wrapper'>
+  <img src='{{this.images.0.url}}' alt='{{this.name}} image' />
+  <div class='artist-options'>
+    <h3>{{this.name}}</h3>
+    {{#if this.followers}}
+      <a href='/albums/{{this.id}}'><button>View albums</button></a>
+    {{else}}
+      <a href='/tracks/{{this.id}}'><button>View tracks</button></a>
+    {{/if}}
+  </div>
+</div>
