@@ -87,3 +87,36 @@ body {
 a {
   color: inherit;
 }
+.track-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 1em auto;
+  justify-content: center;
+}
+.two-side-display {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.two-side-display > *:last-child {
+  width: 30%;
+  min-width: 30%;
+  text-align: center;
+}
+.two-side-display > *:first-child {
+  padding-left: 0.5rem;
+}
+.two-side-display:not(.track-header) {
+  background-color: #f1f3f4;
+}
+.track-header *,
+.track-header {
+  background-color: rgb(48, 47, 47);
+  color: darkgray;
+  padding: 0.7em;
+  font-size: larger;
+  font-weight: 600;
+}
